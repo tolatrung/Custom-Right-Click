@@ -41,6 +41,10 @@ body{
     transform: translate(0,-10px);
     /* box-shadow: 0 10px 50px #636363; */
 }
+a{
+    text-decoration: none;
+    color:#333;
+}
 @keyframes showmenu{
     from{
         opacity: 0;
