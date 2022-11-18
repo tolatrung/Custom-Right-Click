@@ -1,14 +1,17 @@
 body{
-    background-color: #eee;
+    background-image: url(./img/ok.png);
     font-family: Roboto;
 }
 #menu{
     position: fixed;
     top:50%;
     left:50%;
-    width:200px;
+    width:auto;
     display: none;
     border-radius: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: 4px;
+    padding: 10px;
 }
 #menu ul{
     padding:0;
@@ -19,9 +22,8 @@ body{
     margin-right: 15px;
 }
 #menu li{
-    padding:20px;
-    background-color: #ffffff;
-    color:#333;
+    padding:10px;
+    color:rgb(228, 228, 228);
     transition: 0.5s;
     opacity: 0;
     animation: showmenu 0.5s ease-in-out 1 forwards;
@@ -36,14 +38,16 @@ body{
     animation-delay: 0.6s;
 }
 #menu li:hover{
-    background-color: #a2a2a2;
+    background: 
+    rgba(255, 255, 255, 0.1);
     color: #ffffff;
     transform: translate(0,-10px);
+    border-radius: 6px;
     /* box-shadow: 0 10px 50px #636363; */
 }
 a{
     text-decoration: none;
-    color:#333;
+    color:rgb(255, 255, 255);
 }
 @keyframes showmenu{
     from{
